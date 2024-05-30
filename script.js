@@ -24,6 +24,8 @@ const lowerRegTextInput = input.toLowerCase().replace(replacedMarks, "");
 
 checkButton.addEventListener("click", () => {
   checkForPalindrome(textInput.value);
+  textInput.value = "";
+    return;
 });
 textInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
